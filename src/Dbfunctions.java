@@ -8,7 +8,7 @@ public class Dbfunctions {
             Class.forName("org.postgresql.Driver");
             conn= DriverManager.getConnection("jdbc:postgresql://localhost:5432/students",user,pass);
             if(conn!=null){
-                System.out.print("mission success");
+                System.out.println("mission success");
             }
             else{
                 System.out.println("failed");
@@ -19,3 +19,5 @@ public class Dbfunctions {
         return conn;
     }
 }
+//give necessary code and open module settings of the project
+//go to libraries and add jar file
